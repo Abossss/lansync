@@ -1,0 +1,43 @@
+# Binaries
+/lansync
+/lansync.exe
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads
+web/uploads/*
+!web/uploads/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

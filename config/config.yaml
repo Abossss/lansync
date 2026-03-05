@@ -1,0 +1,30 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+  read_timeout: 30s
+  write_timeout: 30s
+  max_upload_size: 1073741824  # 1GB
+
+storage:
+  upload_dir: "./web/uploads"
+  temp_dir: "./web/uploads/tmp"
+  max_storage: 10737418240  # 10GB
+  cleanup_interval: 1h
+
+discovery:
+  enabled: true
+  port: 7350
+  broadcast_interval: 30s
+  peer_timeout: 5m
+
+transfer:
+  max_concurrent: 5
+  chunk_size: 1048576  # 1MB
+  buffer_size: 65536   # 64KB
+
+database:
+  path: "./lansync.db"
+
+ui:
+  default_theme: "light"
+  items_per_page: 50
